@@ -29,8 +29,8 @@ def convert_file(file_name, main_lang, sub_lang):
         print("<h3>" + caption_main.text.replace("&lrm;","") + "</h3>")
         break
       else:
-        print("<p>" + caption_sub.text.replace("&lrm;", ""))
-        print("<p>")
+        print("<p>" + caption_sub.text.replace("&lrm;", "") + "</p>")
+        print("")
         index_sub += 1
     index_main += 1
 
