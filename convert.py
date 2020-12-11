@@ -24,7 +24,7 @@ def convert_file(file_name, main_lang, sub_lang):
       caption_main = vtt_main[index_main]
       caption_sub = vtt_sub[index_sub]
 
-      if (caption_main.start < caption_sub.start):
+      if (caption_main.start <= caption_sub.start):
         #print("##### " + caption_main.text.replace("&lrm;","").replace("\n","\n##### "))
         print("<h3>" + caption_main.text.replace("&lrm;","") + "</h3>")
         break
